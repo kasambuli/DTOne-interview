@@ -1,6 +1,6 @@
 const { competitions, results, getTournamentWinner } = require('./tournament')
 
-test('Should return Lion as the winnner', () => {
+test('Should return cheetah as the winnner', () => {
     const winner = getTournamentWinner(competitions, results)
     expect(winner).toBe("cheetah")
 })
