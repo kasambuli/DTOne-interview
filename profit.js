@@ -38,7 +38,10 @@ function getMaxProfit(prices, k) {
             currentProfit[l] = Math.max(currentProfit[l - 1], maxThisFar + prices[l])
         }
     }
+    // console.log(k % 2 == 0 ? evenProfits[evenProfits.length - 1] : oddProfits[oddProfits.length - 1])
     return k % 2 == 0 ? evenProfits[evenProfits.length - 1] : oddProfits[oddProfits.length - 1]
 }
+//invoke the function
+getMaxProfit(prices, k)
 module.exports = { prices, k, getMaxProfit }
 

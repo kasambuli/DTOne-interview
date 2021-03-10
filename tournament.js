@@ -25,8 +25,11 @@ function getTournamentWinner(competitions, results) {
         counts[i] == null ? counts[i] = 1 : counts[i]++
         counts[i] > count ? (winner = i, count = counts[i]) : winner = i
     }
+    // console.log(winner)
     return winner;
 }
+//invoke the function
+getTournamentWinner(competitions, results)
 module.exports = { competitions, results, getTournamentWinner }
 
 
